@@ -2,7 +2,14 @@
 import { Home, AppLayout, Error } from "./ui";
 
 // Feature Components
-import { Menu, Cart, CreateOrder, Order, menuLoader } from "./features";
+import {
+  Menu,
+  Cart,
+  CreateOrder,
+  Order,
+  menuLoader,
+  orderLoader,
+} from "./features";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -32,6 +39,7 @@ const router = createBrowserRouter([
       {
         path: "/order/:orderId",
         element: <Order />,
+        loader: orderLoader,
       },
     ],
   },
@@ -43,4 +51,4 @@ function App() {
 
 export default App;
 
-// 5
+// 11

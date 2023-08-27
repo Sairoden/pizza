@@ -1,13 +1,21 @@
+// Menu
 import Menu, { menuLoader } from "./menu/Menu";
 import MenuItem from "./menu/MenuItem";
+
+// Cart
 import Cart from "./cart/Cart";
 import CartItem from "./cart/CartItem";
 import CartOverview from "./cart/CartOverview";
 import EmptyCart from "./cart/EmptyCart";
-import CreateOrder from "./order/CreateOrder";
-import Order from "./order/Order";
-import OrderItem from "./order/OrderItem";
+
+// User
 import CreateUser from "./user/CreateUser";
+
+// Order
+import Order, { orderLoader } from "./order/Order";
+import CreateOrder from "./order/CreateOrder";
+import OrderItem from "./order/OrderItem";
+import SearchOrder from "./order/SearchOrder";
 
 export {
   menuLoader,
@@ -21,4 +29,6 @@ export {
   Order,
   OrderItem,
   CreateUser,
+  SearchOrder,
+  orderLoader,
 };
