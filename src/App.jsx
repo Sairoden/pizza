@@ -1,5 +1,5 @@
 // UI Components
-import { Home, AppLayout } from "./ui";
+import { Home, AppLayout, Error } from "./ui";
 
 // Feature Components
 import { Menu, Cart, CreateOrder, Order, menuLoader } from "./features";
@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
         path: "/menu",
         element: <Menu />,
         loader: menuLoader,
+        errorElement: <Error />,
       },
       {
         path: "/cart",
