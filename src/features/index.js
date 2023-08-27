@@ -1,4 +1,4 @@
-import Menu from "./menu/Menu";
+import Menu, { menuLoader } from "./menu/Menu";
 import MenuItem from "./menu/MenuItem";
 import Cart from "./cart/Cart";
 import CartItem from "./cart/CartItem";
@@ -10,6 +10,7 @@ import OrderItem from "./order/OrderItem";
 import CreateUser from "./user/CreateUser";
 
 export {
+  menuLoader,
   Menu,
   MenuItem,
   Cart,

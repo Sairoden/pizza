@@ -2,7 +2,7 @@
 import { Home, AppLayout } from "./ui";
 
 // Feature Components
-import { Menu, Cart, CreateOrder, Order } from "./features";
+import { Menu, Cart, CreateOrder, Order, menuLoader } from "./features";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -17,6 +17,7 @@ const router = createBrowserRouter([
       {
         path: "/menu",
         element: <Menu />,
+        loader: menuLoader,
       },
       {
         path: "/cart",
