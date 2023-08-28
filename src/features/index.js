@@ -13,7 +13,7 @@ import CreateUser from "./user/CreateUser";
 
 // Order
 import Order, { orderLoader } from "./order/Order";
-import CreateOrder from "./order/CreateOrder";
+import CreateOrder, { createOrderAction } from "./order/CreateOrder";
 import OrderItem from "./order/OrderItem";
 import SearchOrder from "./order/SearchOrder";
 
@@ -31,4 +31,5 @@ export {
   CreateUser,
   SearchOrder,
   orderLoader,
+  createOrderAction,
 };

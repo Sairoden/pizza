@@ -9,6 +9,7 @@ import {
   Order,
   menuLoader,
   orderLoader,
+  createOrderAction,
 } from "./features";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
       {
         path: "/order/new",
         element: <CreateOrder />,
+        action: createOrderAction,
       },
       {
         path: "/order/:orderId",
