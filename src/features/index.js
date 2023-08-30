@@ -10,6 +10,7 @@ import EmptyCart from "./cart/EmptyCart";
 
 // User
 import CreateUser from "./user/CreateUser";
+import Username from "./user/Username";
 
 // Order
 import Order, { orderLoader } from "./order/Order";
@@ -32,4 +33,5 @@ export {
   SearchOrder,
   orderLoader,
   createOrderAction,
+  Username,
 };
