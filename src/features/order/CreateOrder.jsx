@@ -50,13 +50,25 @@ function CreateOrder() {
       <Form method="POST">
         <div>
           <label htmlFor="customer">First Name</label>
-          <input type="text" name="customer" id="customer" required />
+          <input
+            className="input"
+            type="text"
+            name="customer"
+            id="customer"
+            required
+          />
         </div>
 
         <div>
           <label htmlFor="phone">Phone number</label>
           <div>
-            <input type="tel" name="phone" id="phone" required />
+            <input
+              className="input"
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+            />
           </div>
           {formErrors?.phone && <p>{formErrors.phone}</p>}
         </div>
@@ -64,12 +76,20 @@ function CreateOrder() {
         <div>
           <label htmlFor="address">Address</label>
           <div>
-            <input type="text" name="address" id="address" required />
+            <input
+              className="input"
+              type="text"
+              name="address"
+              id="address"
+              required
+            />
           </div>
         </div>
 
         <div>
           <input
+            className="h-6 w-6 accent-yellow-400 focus:outline-none focus:ring
+          focus:ring-yellow-400 focus:ring-offset-2"
             type="checkbox"
             name="priority"
             id="priority"
