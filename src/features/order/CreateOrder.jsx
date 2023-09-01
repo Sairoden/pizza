@@ -48,13 +48,17 @@ function CreateOrder() {
 
   return (
     <div>
-      <h2>Ready to order? Let's go!</h2>
+      <h2 className="mb-8 mt-10 text-xl font-semibold">
+        Ready to order? Let's go!
+      </h2>
 
       <Form method="POST">
-        <div>
-          <label htmlFor="customer">First Name</label>
+        <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
+          <label htmlFor="customer" className="sm:basis-40">
+            First Name
+          </label>
           <input
-            className="input"
+            className="input grow"
             type="text"
             name="customer"
             id="customer"
@@ -62,25 +66,33 @@ function CreateOrder() {
           />
         </div>
 
-        <div>
-          <label htmlFor="phone">Phone number</label>
-          <div>
+        <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
+          <label htmlFor="phone" className="sm:basis-40">
+            Phone number
+          </label>
+          <div className="grow">
             <input
-              className="input"
+              className="input w-full"
               type="tel"
               name="phone"
               id="phone"
               required
             />
+            {formErrors?.phone && (
+              <p className="mt-2 rounded-md bg-red-100 p-2 text-xs text-red-700">
+                {formErrors.phone}
+              </p>
+            )}
           </div>
-          {formErrors?.phone && <p>{formErrors.phone}</p>}
         </div>
 
-        <div>
-          <label htmlFor="address">Address</label>
-          <div>
+        <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
+          <label htmlFor="address" className="sm:basis-40">
+            Address
+          </label>
+          <div className="grow">
             <input
-              className="input"
+              className="input w-full"
               type="text"
               name="address"
               id="address"
@@ -89,7 +101,7 @@ function CreateOrder() {
           </div>
         </div>
 
-        <div>
+        <div className="mb-12 flex items-center gap-5">
           <input
             className="h-6 w-6 accent-yellow-400 focus:outline-none focus:ring
           focus:ring-yellow-400 focus:ring-offset-2"
@@ -99,7 +111,9 @@ function CreateOrder() {
             // value={withPriority}
             // onChange={(e) => setWithPriority(e.target.checked)}
           />
-          <label htmlFor="priority">Want to give your order a priority?</label>
+          <label htmlFor="priority" className="font-medium">
+            Want to give your order a priority?
+          </label>
         </div>
 
         <div>
