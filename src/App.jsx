@@ -1,3 +1,6 @@
+// React & Libraries
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 // UI Components
 import { Home, AppLayout, Error } from "./ui";
 
@@ -11,8 +14,6 @@ import {
   orderLoader,
   createOrderAction,
 } from "./features";
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {

@@ -1,5 +1,5 @@
 // React & Libraries
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
 
 // Services
@@ -40,6 +40,7 @@ const fakeCart = [
 function CreateOrder() {
   const navigation = useNavigation();
   const isSubmitting = navigation.state === "submitting";
+  const username = useSelector((state) => state.user.username);
 
   const formErrors = useActionData();
 
@@ -63,6 +64,7 @@ function CreateOrder() {
             name="customer"
             id="customer"
             required
+            default={username}
           />
         </div>
 
