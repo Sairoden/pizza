@@ -7,8 +7,11 @@ import { CreateUser } from "../features";
 // UI Components
 import { Button } from "../ui";
 
+// Slices
+import { getUsername } from "../features/user/userSlice";
+
 function Home() {
-  const username = useSelector((state) => state.user.username);
+  const username = useSelector(getUsername);
 
   return (
     <div className="my-10 px-4 text-center sm:my-16">
