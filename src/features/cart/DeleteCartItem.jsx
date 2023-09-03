@@ -7,7 +7,7 @@ import { Button } from "../../ui";
 // Slices
 import { deleteItem } from "./cartSlice";
 
-function DeleteCartItem({ pizzaId }) {
+function DeleteCartItem({ pizzaId,  }) {
   const dispatch = useDispatch();
 
   return (
