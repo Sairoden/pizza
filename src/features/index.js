@@ -7,6 +7,7 @@ import Cart from "./cart/Cart";
 import CartItem from "./cart/CartItem";
 import CartOverview from "./cart/CartOverview";
 import EmptyCart from "./cart/EmptyCart";
+import DeleteCartItem from "./cart/DeleteCartItem";
 
 // User
 import CreateUser from "./user/CreateUser";
@@ -34,4 +35,5 @@ export {
   orderLoader,
   createOrderAction,
   Username,
+  DeleteCartItem,
 };

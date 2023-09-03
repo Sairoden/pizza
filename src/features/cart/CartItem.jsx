@@ -1,6 +1,9 @@
 // UI Components
 import { Button } from "../../ui";
 
+// Feature Components
+import { DeleteCartItem } from "../index";
+
 // Utilities
 import { formatCurrency } from "../../utils/helpers";
 
@@ -15,7 +18,8 @@ function CartItem({ item }) {
 
       <div className="flex items-center justify-between sm:gap-6">
         <p className="text-sm font-bold">{formatCurrency(totalPrice)}</p>
-        <Button type="small">Delete</Button>
+
+        <DeleteCartItem pizzaId={pizzaId} />
       </div>
     </li>
   );
