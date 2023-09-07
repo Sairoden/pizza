@@ -19,6 +19,7 @@ import Order, { orderLoader } from "./order/Order";
 import CreateOrder, { createOrderAction } from "./order/CreateOrder";
 import OrderItem from "./order/OrderItem";
 import SearchOrder from "./order/SearchOrder";
+import UpdateOrder, { updateOrderAction } from "./order/UpdateOrder";
 
 export {
   menuLoader,
@@ -38,4 +39,6 @@ export {
   Username,
   DeleteCartItem,
   UpdateCartItemQuantity,
+  UpdateOrder,
+  updateOrderAction,
 };
